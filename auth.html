@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Register - Woodmart Furniture Clone</title>
+    <link rel="stylesheet" href="public/css/furniture.css">
+    <link rel="stylesheet" href="public/css/auth.css">
+    <link rel="icon" href="public/media/icons_499043.svg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Work+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="auth-container">
+        <div class="auth-header">
+            <a href="index.html" class="home-link">&larr; Back to Shop</a>
+        </div>
+
+        <div class="auth-card">
+            <div class="auth-tabs">
+                <button class="tab-btn active" data-tab="login">Login</button>
+                <button class="tab-btn" data-tab="register">Register</button>
+            </div>
+
+            <!-- Login Form -->
+            <div class="auth-form active" id="login-form">
+                <h2>Welcome Back</h2>
+                <p class="subtitle">Login to your account to continue.</p>
+                <form id="form-login">
+                    <div class="form-group">
+                        <label for="login-email">Email Address</label>
+                        <input type="email" id="login-email" required placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" required placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="auth-btn">Login</button>
+                    <p class="error-msg" id="login-error"></p>
+                </form>
+            </div>
+
+            <!-- Register Form -->
+            <div class="auth-form" id="register-form">
+                <h2>Create Account</h2>
+                <p class="subtitle">Join us to get exclusive offers.</p>
+                <form id="form-register">
+                    <div class="form-group">
+                        <label for="reg-name">Full Name</label>
+                        <input type="text" id="reg-name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-email">Email Address</label>
+                        <input type="email" id="reg-email" required placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-password">Password</label>
+                        <input type="password" id="reg-password" required placeholder="Create a password">
+                    </div>
+                    <button type="submit" class="auth-btn">Register</button>
+                    <p class="error-msg" id="reg-error"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="public/js/auth.js"></script>
+</body>
+
+</html>

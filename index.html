@@ -433,6 +433,40 @@
                     </div>
                 </div>
                 <!-- ///////////////////////End of grid-1///////////////////////// -->
+                <div class="row-2">
+                    <img src="public/media/icons_809489.svg" alt="icon">
+                    <input type="text" placeholder="Search for products">
+                    <div class="icon bi bi-list hamburger-btn" id="hamburger-btn"></div>
+                    <div class="login">
+                        <a href="auth.html" id="auth-link">Login / Register</a>
+                    </div>
+                    <div class="cart">
+                        <a href="#"> <i class="icon bi bi-cart3"></i> $0.00 / $0.00 </a>
+                    </div>
+                    <i class="icon bi bi-shuffle"></i>
+                    <i class="icon bi bi-heart"></i>
+                </div>
+
+                <!-- Auth Check Script -->
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const currentUser = JSON.parse(localStorage.getItem('woodmartCurrentUser'));
+                        const authLink = document.getElementById('auth-link');
+                        if (currentUser && authLink) {
+                            authLink.innerText = `Hi, ${currentUser.name.split(' ')[0]}`; // First Name
+                            authLink.href = '#'; // Or a profile page
+
+                            // Optional: Add Logout logic on click
+                            authLink.addEventListener('click', (e) => {
+                                e.preventDefault();
+                                if (confirm('Do you want to logout?')) {
+                                    localStorage.removeItem('woodmartCurrentUser');
+                                    window.location.reload();
+                                }
+                            });
+                        }
+                    });
+                </script>
                 <div class="grid-1" id="products">
                     <h2 class="sub-heading">Weekly bestsellers</h2>
                     <div class="flex-box-3">
