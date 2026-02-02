@@ -54,6 +54,16 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCartUI();
     }
 
+    // ... (other functions) ...
+
+    // Checkout Button
+    const checkoutBtn = document.querySelector('.checkout-btn');
+    if (checkoutBtn) {
+        checkoutBtn.addEventListener('click', () => {
+            window.location.href = 'checkout.html';
+        });
+    }
+
     function removeFromCart(id) {
         cart = cart.filter(item => item.id !== id);
         saveCart();
