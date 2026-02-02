@@ -253,9 +253,19 @@ input:focus {
     gap: 40px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .checkout-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Stack on smaller tablets too */
+        gap: 30px;
+    }
+    
+    .checkout-container {
+        padding: 0 15px;
+        margin: 30px auto;
+    }
+    
+    .checkout-header h1 {
+        font-size: 28px;
     }
 }
 

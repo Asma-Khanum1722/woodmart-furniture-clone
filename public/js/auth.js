@@ -1,15 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Tabs
+    console.log("Auth JS Loaded");
+    
     const tabBtns = document.querySelectorAll('.tab-btn');
     const authForms = document.querySelectorAll('.auth-form');
 
     tabBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-            // Remove active classes
+            
             tabBtns.forEach(b => b.classList.remove('active'));
             authForms.forEach(f => f.classList.remove('active'));
 
-            // Add active class
+            
             btn.classList.add('active');
             const tabId = btn.getAttribute('data-tab');
             const targetForm = tabId === 'login' ? document.getElementById('login-form') : document.getElementById('register-form');
@@ -17,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Register Logic
+    
     const registerForm = document.getElementById('form-register');
     if (registerForm) {
         registerForm.addEventListener('submit', (e) => {
@@ -32,21 +33,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Get existing users
+            
             const users = JSON.parse(localStorage.getItem('woodmartUsers')) || [];
 
-            // Check if email exists
+            
             if (users.some(user => user.email === email)) {
                 errorMsg.innerText = 'Email already registered.';
                 return;
             }
 
-            // Save new user
+            
             const newUser = { name, email, password };
             users.push(newUser);
             localStorage.setItem('woodmartUsers', JSON.stringify(users));
 
-            // Log them in immediately
+            
             localStorage.setItem('woodmartCurrentUser', JSON.stringify(newUser));
 
             errorMsg.style.color = 'green';
@@ -58,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Login Logic
+    
     const loginForm = document.getElementById('form-login');
     if (loginForm) {
         loginForm.addEventListener('submit', (e) => {
@@ -72,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const user = users.find(u => u.email === email && u.password === password);
 
             if (user) {
-                // Success
+                
                 localStorage.setItem('woodmartCurrentUser', JSON.stringify(user));
                 errorMsg.style.color = 'green';
                 errorMsg.innerText = 'Login successful! Redirecting...';
@@ -81,10 +82,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     window.location.href = 'index.html';
                 }, 1000);
             } else {
-                // Fail
+                
                 errorMsg.style.color = '#e74c3c';
                 errorMsg.innerText = 'Invalid email or password.';
             }
         });
     }
 });
+
