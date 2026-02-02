@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/furniture.css">
+    <link rel="icon" href="public/media/icons_499043.svg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <title>Woodmart Furniture Clone</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="row-1">
+                <div class="left">
+                    <ul>
+                        <li>
+                            <span> <img src="public/media/european-union.png" alt="flag">EUP </span>
+                            <ul>
+                                <li><img src="public/media/canada.png" alt="flag">Canada</li>
+                                <li><img src="public/media/united-states-of-america.png" alt="flag">USA</li>
+                                <li><img src="public/media/japan.png" alt="flag">Japan</li>
+                            </ul>
+                        </li>
+                        <span>|</span>
+                        <span><a href="#">Gift Cards</a></span>
+                        <span><a href="#">Showrooms</a></span>
+                        <span><a href="#">About Us</a></span>
+
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><i class="bi bi-telephone"></i>(686) 492-1044</li>
+                        <li style="font-size: 20px;color: lightgrey;">|</li>
+                        <li><a href="https://woodmart.xtemos.com/furniture2/contact-us/"><img
+                                    src="public/media/contact.png" alt="Contact"></a></li>
+                        <li><a href="https://woodmart.xtemos.com/furniture2/contact-us/">Contact with an expert</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row-2">
+                <!-- Hamburger Button (Mobile Only) -->
+                <button class="hamburger" id="hamburger-btn" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <img src="public/media/logo.svg" alt="logo">
+                <input type="text" placeholder="Search for Products">
+                <span><a href="#"><i class="icon bi bi-shuffle"></i></a></span>
+                <span><a href="#"><i class="icon bi bi-heart"></i></a></span>
+                <span class="login"><a href="#"><i class="icon bi bi-person"></i>
+                        Login / Register</a></span>
+                <span class="cart"><a href="#"><i class="icon bi bi-cart3"></i>
+                        $0.00</a></span>
+            </div>
+
+            <!-- Mobile Menu Overlay -->
+            <div class="mobile-menu" id="mobile-menu">
+                <button class="close-menu" id="close-menu-btn">&times;</button>
+                <nav class="mobile-nav">
+                    <a href="#products"><i class="fa-solid fa-chair"></i> Chairs</a>
+                    <a href="#products"><i class="fa-solid fa-table"></i> Tables</a>
+                    <a href="#products"><i class="fa-solid fa-couch"></i> Sofas</a>
+                    <a href="#products"><i class="fa-solid fa-wheelchair"></i> Armchairs</a>
+                    <a href="#products"><i class="fa-solid fa-bed"></i> Beds</a>
+                    <a href="#products"><i class="fa-solid fa-box-open"></i> Storage</a>
+                    <a href="#categories"><i class="fa-solid fa-rug"></i> Textile</a>
+                    <a href="#categories"><i class="fa-solid fa-lightbulb"></i> Lighting</a>
+                    <a href="#categories"><i class="fa-solid fa-puzzle-piece"></i> Toys</a>
+                    <a href="#categories"><i class="fa-solid fa-leaf"></i> Decor</a>
+                </nav>
+                <div class="mobile-menu-footer">
+                    <a href="#brands"><i class="bi bi-person"></i> Login / Register</a>
+                    <a href="#brands"><i class="bi bi-cart3"></i> Cart ($0.00)</a>
+                    <p class="shipping-note">Free shipping for all orders of $1,300</p>
+                </div>
+            </div>
+
+
+            <div class="row-3">
+                <div class="flex-box-1">
+
+                    <div class="flex-1">
+                        <a href="#products">
+                            <i class="fa-solid fa-chair"
+                                style="font-size: 24px; color: #333; margin-right: 5px;"></i><span>Chairs</span>
+                        </a>
+                    </div>
+                    <div class="flex-1">
+                        <a href="#products">
+                            <i class="fa-solid fa-table"
+                                style="font-size: 24px; color: #333; margin-right: 5px;"></i><span>Tables</span>
+                        </a>
+                    </div>
+                    <div class="flex-1">
+                        <a href="#products">
+                            <i class="fa-solid fa-couch"
+                                style="font-size: 24px; color: #333; margin-right: 5px;"></i><span>Sofas</span>
+                        </a>
+                    </div>
+                    <div class="flex-1">
+                        <a href="#products">
+                            <i class="fa-solid fa-wheelchair"
+                                style="font-size: 24px; color: #333; margin-right: 5px;"></i><span>Armchairs</span>
+                        </a>
+                    </div>
+                    <div class="flex-1">
+                        <a href="#products">
+                            <i class="fa-solid fa-bed"
+                                style="font-size: 24px; color: #333; margin-right: 5px;"></i><span>Beds</span>
+                        </a>
+                    </div>
+                    <div class="flex-1">
+                        <a href="#categories">
+                            <i class="fa-solid fa-box-open"
+                                style="font-size: 24px; color: #333; margin-right: 5px;"></i><span>Storage</span>
+                        </a>
+                    </div>
+                    <div class="flex-1">
+                        <a href="#categories">
+                            <i class="fa-solid fa-rug"
+                                style="font-size: 24px; color: #333; margin-right: 5px;"></i><span>Textile</span>
+                        </a>
+                    </div>
+                    <div class="flex-1">
+                        <a href="#categories">
+                            <i class="fa-solid fa-lightbulb"
+                                style="font-size: 24px; color: #333; margin-right: 5px;"></i><span>Lighting</span>
+                        </a>
+                    </div>
+                    <div class="flex-1">
+                        <a href="#brands">
+                            <i class="fa-solid fa-puzzle-piece"
+                                style="font-size: 24px; color: #333; margin-right: 5px;"></i><span>Toys</span>
+                        </a>
+                    </div>
+                    <div class="flex-1">
+                        <a href="#brands">
+                            <i class="fa-solid fa-leaf"
+                                style="font-size: 24px; color: #333; margin-right: 5px;"></i><span>Decor</span>
+                        </a>
+                    </div>
+
+                </div>
+                <span class="span-1">Free shipping for all orders of $1.300</span>
+            </div>
+
+        </div>
+        <div class="header">
+            <i class="fa-solid fa-leaf" style="font-size: 48px; color: #333; margin-bottom: 20px;"></i>
+            <span>Discover more products <br> in the <strong>decor</strong> category</span>
+            <div class="heading">
+                <h1>Terracotta vase <br> by <img src="public/media/heading profile.webp" alt=""> Courtney Henry</h1>
+            </div>
+            <div class="price">
+                <button>Shop Now</button>
+                <span class="span-2">$182</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="grid-box-1">
+                <div class="grid-1" id="categories">
+                    <h2 class="sub-heading">Our categories</h2>
+                    <p class="sub-para">Lots of new products and product collections</p>
+                    <div class="flex-box-2">
+                        <div class="flex-2">
+                            <a href="#">
+                                <div class="circle-image">
+                                    <span>
+                                        <img src="public/media/1.webp" alt="just an image -_-">
+                                    </span>
+                                    <div>
+                                        <span>Chairs</span>
+                                        <span>16 products</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex-2">
+                            <a href="#">
+                                <div class="circle-image">
+                                    <span>
+                                        <img src="public/media/2.webp" alt="just an image -_-">
+                                    </span>
+                                    <div>
+                                        <span>Tables</span>
+                                        <span>16 products</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex-2">
+                            <a href="#">
+                                <div class="circle-image">
+                                    <span>
+                                        <img src="public/media/sofas.jpg" alt="just an image -_-">
+                                    </span>
+                                    <div>
+                                        <span>Sofas</span>
+                                        <span>16 products</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex-2">
+                            <a href="#">
+                                <div class="circle-image">
+                                    <span>
+                                        <img src="public/media/4.webp" alt="just an image -_-">
+                                    </span>
+                                    <div>
+                                        <span>Armchairs</span>
+                                        <span>16 products</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex-2">
+                            <a href="#">
+                                <div class="circle-image">
+                                    <span>
+                                        <img src="public/media/5.webp" alt="just an image -_-">
+                                    </span>
+                                    <div>
+                                        <span>Beds</span>
+                                        <span>16 products</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex-2">
+                            <a href="#">
+                                <div class="circle-image">
+                                    <span>
+                                        <img src="public/media/6.webp" alt="just an image -_-">
+                                    </span>
+                                    <div>
+                                        <span>Storage</span>
+                                        <span>16 products</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex-2">
+                            <a href="#">
+                                <div class="circle-image">
+                                    <span>
+                                        <img src="public/media/textile.jpg" alt="just an image -_-">
+                                    </span>
+                                    <div>
+                                        <span>Textiles</span>
+                                        <span>16 products</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex-2">
+                            <a href="#">
+                                <div class="circle-image">
+                                    <span>
+                                        <img src="public/media/8.webp" alt="just an image -_-">
+                                    </span>
+                                    <div>
+                                        <span>Lighting</span>
+                                        <span>16 products</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex-2">
+                            <a href="#">
+                                <div class="circle-image">
+                                    <span>
+                                        <img src="public/media/9.webp" alt="just an image -_-">
+                                    </span>
+                                    <div>
+                                        <span>Toys</span>
+                                        <span>16 products</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex-2">
+                            <a href="#">
+                                <div class="circle-image">
+                                    <span>
+                                        <img src="public/media/10.webp" alt="just an image -_-">
+                                    </span>
+                                    <div>
+                                        <span>Decor</span>
+                                        <span>16 products</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ///////////////////////End of grid-1///////////////////////// -->
+                <div class="grid-1" id="products">
+                    <h2 class="sub-heading">Weekly bestsellers</h2>
+                    <div class="flex-box-3">
+                        <div class="flex-3">
+                            <a href="#">
+                                <div class="card-1">
+                                    <div class="product-image">
+                                        <img class="card-image" src="public/media/a1.jpg" alt="product image">
+                                        <i class="bi heart bi-heart"></i>
+
+                                        <div class="img-description">
+                                            <span class="curve">
+                                                <span>Curve</span>
+                                                <span>4.5 <i class="bi bi-star-fill"></i></span>
+                                            </span>
+                                            <p>Chairs</p>
+                                            <span class="cost">$320.00</span>
+
+                                            <div class="invisible">
+                                                <button class="button-1">Add to cart</button>
+                                                <i class="icons bi bi-shuffle"></i>
+                                                <i class="icons bi bi-search"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </a>
+                        </div>
+                        <div class="flex-3">
+                            <a href="#">
+                                <div class="card-1">
+                                    <div class="product-image">
+                                        <img class="card-image" src="public/media/a2.jpg" alt="product image">
+                                        <span class="new">NEW</span>
+                                        <i style="color: white;" class="bi heart bi-heart"></i>
+                                        <div class="img-description">
+                                            <span class="curve">
+                                                <span>Can</span>
+                                            </span>
+                                            <p>Sofas</p>
+                                            <span class="cost">$2,100.00</span>
+                                            <br>
+                                            <div class="invisible">
+                                                <button class="button-1">Add to cart</button>
+                                                <i class="icons bi bi-shuffle"></i>
+                                                <i class="icons bi bi-search"></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex-3">
+                            <a href="#">
+                                <div class="card-1">
+                                    <div class="product-image">
+                                        <img class="card-image" src="public/media/a3.jpg" alt="product image">
+                                        <i style="color: white;" class="bi heart bi-heart"></i>
+                                        <div class="img-description">
+                                            <span class="curve">
+                                                <span>Belt</span>
+                                                <span>4.9<i class="bi bi-star-fill"></i></span>
+                                            </span>
+                                            <p>Armchairs</p>
+                                            <span class="cost">$449.00</span>
+                                            <br>
+                                            <div class="invisible">
+                                                <button class="button-1">Add to cart</button>
+                                                <i class="icons bi bi-shuffle"></i>
+                                                <i class="icons bi bi-search"></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex-3">
+                            <a href="#">
+                                <div class="card-1">
+                                    <div class="product-image">
+                                        <img class="card-image" src="public/media/a4.jpg" alt="product image">
+                                        <i style="color: white;" class="bi heart bi-heart"></i>
+                                        <div class="img-description">
+                                            <span class="curve">
+                                                <span>Giro LR</span>
+                                                <span>5<i class="bi bi-star-fill"></i></span>
+                                            </span>
+                                            <p>Tables</p>
+                                            <span class="cost">$680.00</span>
+                                            <br>
+                                            <div class="invisible">
+                                                <button class="button-1">Add to cart</button>
+                                                <i class="icons bi bi-shuffle"></i>
+                                                <i class="icons bi bi-search"></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex-3">
+                            <a href="#">
+                                <div class="card-1">
+                                    <div class="product-image">
+                                        <img class="card-image" src="public/media/a5.jpg" alt="product image">
+                                        <i style="color: white;" class="bi heart bi-heart"></i>
+                                        <div class="img-description">
+                                            <span class="curve">
+                                                <span>Soft Edge</span>
+                                                <span>4.8<i class="bi bi-star-fill"></i></span>
+                                            </span>
+                                            <p>Chairs</p>
+                                            <span class="cost">$440.00</span>
+                                            <br>
+                                            <div class="invisible">
+                                                <button class="button-1">Add to cart</button>
+                                                <i class="icons bi bi-shuffle"></i>
+                                                <i class="icons bi bi-search"></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex-3">
+                            <a href="#">
+                                <div class="card-1">
+                                    <div class="product-image">
+                                        <img class="card-image" src="public/media/a6.jpg" alt="product image">
+                                        <i style="color: white;" class="bi heart bi-heart"></i>
+                                        <div class="img-description">
+                                            <span class="curve">
+                                                <span>Palissade</span>
+                                                <span>4.5<i class="bi bi-star-fill"></i></span>
+
+                                            </span>
+                                            <p>Sofas</p>
+                                            <span class="cost">$1,890.00</span>
+                                            <br>
+                                            <div class="invisible">
+                                                <button class="button-1">Add to cart</button>
+                                                <i class="icons bi bi-shuffle"></i>
+                                                <i class="icons bi bi-search"></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex-3">
+                            <a href="#">
+                                <div class="card-1">
+                                    <div class="product-image">
+                                        <img class="card-image" src="public/media/a7.jpg" alt="product image">
+                                        <span class="new">-10%</span>
+                                        <i style="color: white;" class="bi heart bi-heart"></i>
+                                        <div class="img-description">
+                                            <span class="curve">
+                                                <span>Bitta</span>
+                                            </span>
+                                            <p>Tables</p>
+                                            <span class="cost"><span class="cut">$1,680.00</span>$1,519.00</span>
+                                            <br>
+                                            <div class="invisible">
+                                                <button class="button-1">Add to cart</button>
+                                                <i class="icons bi bi-shuffle"></i>
+                                                <i class="icons bi bi-search"></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex-3">
+                            <a href="#">
+                                <div class="card-1">
+                                    <div class="product-image">
+                                        <img class="card-image" src="public/media/a8.jpg" alt="product image">
+                                        <span class="new">NEW</span>
+                                        <i style="color: white;" class="bi heart bi-heart"></i>
+                                        <div class="img-description">
+                                            <span class="curve">
+                                                <span>Albert</span>
+                                            </span>
+                                            <p>Armchairs</p>
+                                            <span class="cost">$1,600.00</span>
+                                            <br>
+                                            <div class="invisible">
+                                                <button class="button-1">Add to cart</button>
+                                                <i class="icons bi bi-shuffle"></i>
+                                                <i class="icons bi bi-search"></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex-3">
+                            <a href="#">
+                                <div class="card-1">
+                                    <div class="product-image">
+                                        <img class="card-image" src="public/media/a9.jpg" alt="product image">
+                                        <span class="new">-10%</span>
+                                        <i style="color: white;" class="bi heart bi-heart"></i>
+                                        <div class="img-description">
+                                            <span class="curve">
+                                                <span>Navona</span>
+                                            </span>
+                                            <p>Sofas</p>
+                                            <span class="cost"><span class="cut">$1,850.00</span>$1,669.00</span>
+                                            <br>
+                                            <div class="invisible">
+                                                <button class="button-1">Add to cart</button>
+                                                <i class="icons bi bi-shuffle"></i>
+                                                <i class="icons bi bi-search"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex-3">
+                            <a href="#">
+                                <div class="card-1">
+                                    <div class="product-image">
+                                        <img class="card-image" src="public/media/a10.jpg" alt="product image">
+                                        <i style="color: white;" class="bi heart bi-heart"></i>
+                                        <div class="img-description">
+                                            <span class="curve">
+                                                <span>Aruda</span>
+                                                <span>5<i class="bi bi-star-fill"></i></span>
+                                            </span>
+                                            <p>Tables</p>
+                                            <span class="cost">$699.00</span>
+                                            <br>
+                                            <div class="invisible">
+                                                <button class="button-1">Add to cart</button>
+                                                <i class="icons bi bi-shuffle"></i>
+                                                <i class="icons bi bi-search"></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ////////////////////  End of grid-2////////////////////////////////////// -->
+
+                <div class="grid-1" id="brands">
+                    <h2 class="sub-heading">Shopping by brands</h2>
+                    <p class="sub-para">Discover lots products from popular brands</p>
+
+                    <div class="flex-box-4">
+                        <div class="flex-4">
+                            <img src="public/media/logo1.png" alt="just a logo-_-">
+                            <div class="description">
+                                <span class="logo">Elitis</span>
+                                <br>
+                                <span class="city">Talosa / <br> France</span>
+                            </div>
+
+                        </div>
+                        <div class="flex-4">
+                            <img src="public/media/logo2.png" alt="just a logo-_-">
+                            <div class="description">
+                                <span class="logo">Hay</span>
+                                <br>
+                                <span class="city">Barcelona /<br> Spain</span>
+                            </div>
+                        </div>
+                        <div class="flex-4">
+                            <img src="public/media/logo3.png" alt="just a logo-_-">
+                            <div class="description">
+                                <span class="logo">Kettal</span>
+                                <br>
+                                <span class="city">Barcelona /<br> Spain</span>
+                            </div>
+                        </div>
+                        <div class="flex-4">
+                            <img src="public/media/logo4.png" alt="just a logo-_-">
+                            <div class="description">
+                                <span class="logo">Llardo</span>
+                                <br>
+                                <span class="city">Valencia / <br>Spain</span>
+                            </div>
+                        </div>
+                        <div class="flex-4">
+                            <img src="public/media/logo5.png" alt="just a logo-_-">
+                            <div class="description">
+                                <span class="logo">Poliform</span>
+                                <br>
+                                <span class="city">Como / <br> Italy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /////////////////////////End of grid-3/////////////////////////////////// -->
+                <div class="grid-1">
+                    <h2 class="sub-heading">Product collections</h2>
+                    <p class="sub-para">Explore product collections from our vendors</p>
+                    <div class="container-1">
+                        <div class="box">
+                            <img src="public/media/6.webp" alt="image">
+                        </div>
+                        <div class="box">
+                            <img src="public/media/m2.webp" alt="image">
+                        </div>
+                        <div class="box">
+                            <img src="public/media/mm1.jpg" alt="image">
+                        </div>
+                        <div class="box">
+                            <div class="span-3">
+                                <h4>GLADØM</h4>
+                                <p>The new common language will be more simple and regular than the existing languages
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <video src="public/media/7.webp"></video>
+                        </div>
+                        <div class="box">
+                            <img src="public/media/m7.webp" alt="image">
+                        </div>
+                        <div class="box">
+                            <div class="span-3" style="background-color: #d6e5f7;">
+                                <h4>HÄLLAN</h4>
+                                <p>The new common language will be more simple and regular than the existing languages
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="public/media/m9.webp" alt="image">
+                        </div>
+                        <div class="box">
+                            <img src="public/media/m10.webp" alt="image">
+                        </div>
+                        <div class="box">
+                            <img src="public/media/m11.webp" alt="image">
+                        </div>
+                    </div>
+                </div>
+                <!-- ///////////////////////End of grid-4/////////////////////////////////////////////// -->
+                <div class="grid-1">
+                    <!-- text empty for nowww -->
+                </div>
+                <!-- ///////////////////////End of grid-5///////////////////////////////// -->
+                <div class="grid-1">
+                    <h2 class="sub-heading">Rules for choosing furniture</h2>
+                    <div class="flex-box-5">
+                        <div class="flex-5">
+                            <img src="public/media/chair.webp" alt="image">
+                        </div>
+                        <div class="flex-5">
+                            <h4>Whether living on your own or with a family, your living room is an important space.
+                            </h4>
+                            <p>This room is where your family spends time together, and it is the room most of your
+                                guests will spend the majority of their time in. Choosing furniture that creates a
+                                pleasant, welcoming appearance while holding up against the wear and tear of everyday
+                                life is the key in getting this space to work for your needs.</p>
+                            <ul>
+                                <li><span>Choose items in a single color scheme and style</span></li>
+                                <li><span>Consider the area of the room</span></li>
+                                <li><span>Do not buy unnecessary pieces of furniture</span></li>
+                            </ul>
+
+                            <iframe width="690" height="400"
+                                src="https://www.youtube.com/embed/XHOmBV4js_E?si=jECiNxnnXn9gYFQK"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <!-- ////////////////////////End of grid-6////////////////////////////////////////// -->
+                <div class="grid-1">
+                    <h2 class="sub-heading-2">Latest articles</h2>
+
+                    <div class="flex-box-6">
+                        <div class="flex-6">
+                            <div class="last-card">
+                                <a href="#"><img src="public/media/big.webp" alt="image"></a>
+                                <span class="image-content">
+                                    <img class="imagee" src="public/media/avatar.webp" alt="">
+                                    <a href="#">Mr. Mackay</a>
+                                    <span class="span-4"><i class="iconss bi bi-share"></i> <i
+                                            class="iconss bi bi-chat-right"></i></span>
+                                </span>
+                                <span class="span-5">
+                                    <span class="date"><a href="#">Decoration
+                                        </a> / 8 May 2023</span>
+                                    <a class="flex-6-link" href="#">
+                                        <h3>In the heart of Valencia</h3>
+                                    </a>
+                                    <p>As an alternative theory, (and because of Latin scholars do thsi sort of thing)
+                                        someone tracked down a ...</p>
+                                    <a class="last-link" href="#">Continue
+                                        reading</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex-6">
+                            <div class="last-card">
+                                <a href="#"><img src="public/media/m7.webp" alt="image"></a>
+                                <span class="image-content">
+                                    <img class="imagee" src="public/media/avatar.webp" alt="">
+                                    <a href="#">Mr. Mackay</a>
+                                    <span class="span-4"><i class="iconss bi bi-share"></i> <i
+                                            class="iconss bi bi-chat-right"></i></span>
+                                </span>
+                                <span class="span-5">
+                                    <span class="date"><a href="#">Furniture
+                                        </a> / 28 May 2023</span>
+                                    <a class="flex-6-link" href="#">
+                                        <h3>Ethimo mountain style</h3>
+                                    </a>
+                                    <p>So how did the classic Latin become incoherent? <br> According to McClintock, a
+                                        15th century typeset ...</p>
+                                    <a class="last-link" href="#">Continue
+                                        reading</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex-6">
+                            <div class="last-card">
+                                <a href="#"><img src="public/media/f3.jpg" alt="image"></a>
+                                <span class="image-content">
+                                    <img class="imagee" src="public/media/avatar.webp" alt="">
+                                    <a href="#">Mr. Mackay</a>
+                                    <span class="span-4"><i class="iconss bi bi-share"></i> <i
+                                            class="iconss bi bi-chat-right"></i></span>
+                                </span>
+                                <span class="span-5">
+                                    <span class="date"><a href="#">Wooden
+                                            accessories</a> / 21 April 2023</span>
+                                    <a class="flex-6-link" href="#">
+                                        <h3>For clear thinking</h3>
+                                    </a>
+                                    <p>The passage experienced a surge in popularity during the 1960s when Letraset used
+                                        it on their dry-tr ...</p>
+                                    <a class="last-link" href="#">Continue
+                                        reading</a>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- ///////////////////////End of grid-7///////////////////////////////////////////// -->
+                <div class="grid-1">
+                    <h3>
+                        Online store with a wide selection of furniture and decor
+                    </h3>
+                    <p>
+                        Furniture is an invariable attribute of any room. It is they who give it the right atmosphere,
+                        making the space cozy and comfortable, creating favorable conditions for productive work or
+                        helping to relax after a hard day. More and more often, customers want to place an order in an
+                        online store, when you can sit down at the computer in your free time, arrange the furniture in
+                        the photo and calmly buy the furniture you like. The online store has a large catalog of
+                        furniture: both home and office furniture are available.
+                    </p>
+                    <h3>
+                        Furniture production is a modern form of art
+                    </h3>
+                    <p>
+                        Furniture manufacturers, as well as manufacturers of other home goods, are full of amazing
+                        offers: we often come across both standard mass-produced products and unique creations –
+                        furniture from professional craftsmen, which will be appreciated by true connoisseurs of beauty.
+                        We have selected for you the best models from modern craftsmen who managed to ingeniously
+                        combine elegance, quality and practicality in each product unit. Our assortment includes
+                        products from proven companies. Who for many years of continuous joint work did not give reason
+                        to doubt their reliability and honesty. All of them guarantee the high quality of their
+                        products, excellent operational characteristics, attractive appearance of the products, a long
+                        period of use of the furniture, as well as safety.
+                    </p>
+                </div>
+                <!-- ///////////////////////End of grid-8///////////////////////////////////////////// -->
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <img src="public/media/furniture logo.svg" alt="logo" class="footer-logo">
+
+                    <div class="footer-columns">
+                        <div class="footer-col">
+                            <h4>Useful Links</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Showrooms</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Gift Cards</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Categories</h4>
+                            <ul>
+                                <li><a href="#">Chairs</a></li>
+                                <li><a href="#">Tables</a></li>
+                                <li><a href="#">Sofas</a></li>
+                                <li><a href="#">Beds</a></li>
+                                <li><a href="#">Decor</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>More</h4>
+                            <ul>
+                                <li><a href="#">Storage</a></li>
+                                <li><a href="#">Lighting</a></li>
+                                <li><a href="#">Textiles</a></li>
+                                <li><a href="#">Toys</a></li>
+                                <li><a href="#">Offers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <h4>Follow Us</h4>
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+
+                    <p>Download the App</p>
+                    <p class="footer-note">15% off your first order</p>
+
+                    <div class="store-links">
+                        <img src="public/media/google-play.svg" alt="Google Play">
+                        <img src="public/media/app-store.svg" alt="App Store">
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="footer-bottom">
+                <p>
+                    <a href="#"><strong>WOODMART</strong></a> © 2025 · Created by
+                    <a href="#"><strong>Themies</strong></a> · Premium eCommerce Solutions
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Overlay for mobile menu -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <!-- JavaScript for Hamburger Menu Toggle -->
+    <script>
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const menuOverlay = document.getElementById('menu-overlay');
+
+        // Open menu
+        hamburgerBtn.addEventListener('click', () => {
+            hamburgerBtn.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        });
+
+        // Close menu via close button
+        closeMenuBtn.addEventListener('click', () => {
+            hamburgerBtn.classList.remove('active');
+            mobileMenu.classList.remove('active');
+            menuOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        // Close menu via overlay click
+        menuOverlay.addEventListener('click', () => {
+            hamburgerBtn.classList.remove('active');
+            mobileMenu.classList.remove('active');
+            menuOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        // Close menu when clicking a menu link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburgerBtn.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                menuOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Heart/Wishlist Toggle
+        document.querySelectorAll('.heart').forEach(heart => {
+            heart.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+
+                // Toggle active class
+                heart.classList.toggle('active');
+
+                // Toggle between outline and filled heart icon
+                if (heart.classList.contains('active')) {
+                    heart.classList.remove('bi-heart');
+                    heart.classList.add('bi-heart-fill');
+                } else {
+                    heart.classList.remove('bi-heart-fill');
+                    heart.classList.add('bi-heart');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

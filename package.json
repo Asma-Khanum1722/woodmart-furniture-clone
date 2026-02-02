@@ -1,0 +1,12 @@
+{
+  "name": "woodmart-furniture-clone",
+  "version": "1.0.0",
+  "description": "A clone of the Woodmart Furniture theme.",
+  "scripts": {
+    "start": "echo 'This is a static site. Open index.html in your browser.'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
