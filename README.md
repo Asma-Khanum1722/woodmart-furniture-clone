@@ -1,5 +1,4 @@
-# Furniture UI Showcase
-
+# Woodmart Furniture Clone
 A modern, responsive e-commerce for a furniture store, featuring a clean design and interactive elements.
 
 ## 🚀 Features
